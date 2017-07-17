@@ -1,0 +1,28 @@
+'use strict';
+
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    introduce(){
+        return `My name is ${this.name}. I am ${this.age} years old.`;
+    }
+}
+
+class Student extends Person{
+    constructor(name1,age1,klass1){
+        super(name1,age1);
+        this.klass = klass1;
+    }
+
+    introduce(){
+        return `My name is ${this.name}. I am ${this.age} years old. I am a Student. I am at Class ${this.klass}.`;
+    }
+}
+
+module.exports = {
+    Person ,
+    Student
+};

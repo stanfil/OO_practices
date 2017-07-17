@@ -1,0 +1,13 @@
+'use strict';
+
+let fib = [];
+function fibonacci(cnt) {
+    if(cnt==0 || cnt==1) return 1;
+    return fibonacci(cnt-1)+fibonacci(cnt-2);
+}
+
+for(let cnt=0;cnt<35;cnt++){
+    fib[cnt] = fibonacci(cnt);
+}
+
+console.log(fib.toString());
